@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
-#
+#configure an nginx server 
 
+#Bash script must be 5 lines long or less
+#a link between the configuration of nginx
 ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+#restart nginx
 sudo service nginx start
 kill "$(pgrep 'nginx' | head -1)"
